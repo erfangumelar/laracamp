@@ -13,12 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('login', function () {
-    return view('login');
-})->name('login');
+Route::view('/', 'welcome')->name('welcome');
+Route::view('login', 'login')->name('login');
+Route::view('checkout', 'checkout')->name('checkout');
 
 
