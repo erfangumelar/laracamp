@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'welcome')->name('welcome');
 Route::view('login', 'login')->name('login');
 Route::view('checkout', 'checkout')->name('checkout');
+Route::view('success-checkout', 'success_checkout')->name('success-checkout');
 
 
